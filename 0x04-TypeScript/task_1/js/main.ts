@@ -10,3 +10,8 @@ interface Teacher {
     [key: string]: any;  // Index signature to allow any additional properties
   }
   
+
+// Define the Directors interface that extends Teacher
+interface Directors extends Teacher {
+  numberOfReports: number;
+}
